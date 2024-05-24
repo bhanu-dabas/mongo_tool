@@ -78,22 +78,9 @@ mongodb_systemlog_logappend: true                                        # Appen
 mongodb_systemlog_logrotate: "rename"                                    # Logrotation behavior
 mongodb_systemlog_path: /var/log/mongodb/{{ mongodb_daemon_name }}.log   # Log file to send write to instead of stdout
 
-## operationProfiling Options
-mongodb_operation_profiling_slow_op_threshold_ms: 100
-mongodb_operation_profiling_mode: "off"
 
 ## cloud options (MongoDB >= 4.0)
 mongodb_cloud_monitoring_free_state: "runtime"
-
-# names and passwords for administrative users
-mongodb_user_admin_name: siteUserAdmin
-mongodb_user_admin_password: passw0rd
-
-mongodb_root_admin_name: siteRootAdmin
-mongodb_root_admin_password: passw0rd
-
-mongodb_root_backup_name: backupuser
-mongodb_root_backup_password: passw0rd
 
 # setParameter config
 mongodb_set_parameters:
